@@ -38,7 +38,7 @@ li {
 }
 
 body{
-    background: url("img/bg-header.png") no-repeat center 0;
+    background: url("img/bg-header.png") no-repeat center ;
     background-size: cover;
 }
 
@@ -101,4 +101,61 @@ header {
 
 .header__login-icon {
     margin-right: 5px;
+}
+
+/* BANNER STYLES */
+
+.banner {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20%;
+  margin-bottom: 85px;
+}
+
+.banner__main {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin: 0 0 18px 0;
+}
+
+.banner__text {
+  font-size: 25px;
+  margin: 0;
+  font-weight: normal;
+}
+
+
+/*MEDIA*/
+
+@media (max-width:740px){
+.header__menu,
+.header__main {
+  flex-direction: column;
+  align-items: center;
+}
+.header__nav,
+.header__menu {
+  margin: auto;
+}
+
+.header__menu-item:last-child .header__menu-link {
+  padding-right: 18px;
+  }
+
+  .banner{
+    margin-top: 3%;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  .banner__main {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .banner__text {
+    font-size: 15px;
+  }
+
 }
